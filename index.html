@@ -5,54 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roberto Di Lauro - Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; max-width: 900px; }
-    h1, h2 { color: #333; }
-    a { color: #0366d6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .project { margin-bottom: 30px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      max-width: 960px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .project-title {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #0366d6;
+      text-decoration: none;
+      display: block;
+    }
+    .project-title:hover {
+      text-decoration: underline;
+    }
+    .project-desc {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #555;
+    }
   </style>
 </head>
 <body>
   <h1>Roberto Di Lauro</h1>
-  <p>Welcome to my portfolio! Here you can find some of my projects related to machine learning, data science, and computer vision.</p>
+  <p style="text-align:center; max-width: 700px; margin: 0 auto;">
+    Welcome to my portfolio! Here you can find some of my projects related to machine learning, data science, and computer vision.
+  </p>
 
   <h2>Projects</h2>
+  <div class="projects-container">
 
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/Life-Expectancy-Analysis">Life Expectancy Analysis</a></h3>
-    <p>Analysis and visualization of life expectancy data using statistical and machine learning techniques.</p>
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/Life-Expectancy-Analysis" class="project-title" target="_blank" rel="noopener noreferrer">
+        Life Expectancy Analysis
+      </a>
+      <p class="project-desc">
+        Analysis and visualization of life expectancy data using statistical and machine learning techniques.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/AIFA-database-Creation" class="project-title" target="_blank" rel="noopener noreferrer">
+        AIFA Database Creation
+      </a>
+      <p class="project-desc">
+        Data collection and processing pipeline for creating a structured pharmaceutical database from AIFA sources.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/Gradient-Descent" class="project-title" target="_blank" rel="noopener noreferrer">
+        Gradient Descent
+      </a>
+      <p class="project-desc">
+        Implementation and analysis of gradient descent algorithms for optimization problems.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/Predictive-Maintenance-prognostic" class="project-title" target="_blank" rel="noopener noreferrer">
+        Predictive Maintenance Prognostic
+      </a>
+      <p class="project-desc">
+        Development of predictive models for maintenance scheduling based on sensor data and prognostic algorithms.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/NMF-vs-PCA" class="project-title" target="_blank" rel="noopener noreferrer">
+        NMF vs PCA
+      </a>
+      <p class="project-desc">
+        Comparative study between Non-negative Matrix Factorization and Principal Component Analysis for feature extraction.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/Skin-Lesion-Detection" class="project-title" target="_blank" rel="noopener noreferrer">
+        Skin Lesion Detection
+      </a>
+      <p class="project-desc">
+        Machine learning project focusing on detecting skin lesions from dermoscopic images.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <a href="https://github.com/RDLstud/Web-App-Skin-Lesion-Detection" class="project-title" target="_blank" rel="noopener noreferrer">
+        Web App Skin Lesion Detection
+      </a>
+      <p class="project-desc">
+        Development of a web application for real-time skin lesion detection using deep learning models.
+      </p>
+    </div>
+
   </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/AIFA-database-Creation">AIFA Database Creation</a></h3>
-    <p>Data collection and processing pipeline for creating a structured pharmaceutical database from AIFA sources.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/Gradient-Descent">Gradient Descent</a></h3>
-    <p>Implementation and analysis of gradient descent algorithms for optimization problems.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/Predictive-Maintenance-prognostic">Predictive Maintenance Prognostic</a></h3>
-    <p>Development of predictive models for maintenance scheduling based on sensor data and prognostic algorithms.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/NMF-vs-PCA">NMF vs PCA</a></h3>
-    <p>Comparative study between Non-negative Matrix Factorization and Principal Component Analysis for feature extraction.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/Skin-Lesion-Detection">Skin Lesion Detection</a></h3>
-    <p>Machine learning project focusing on detecting skin lesions from dermoscopic images.</p>
-  </div>
-
-  <div class="project">
-    <h3><a href="https://github.com/RDLstud/Web-App-Skin-Lesion-Detection">Web App Skin Lesion Detection</a></h3>
-    <p>Development of a web application for real-time skin lesion detection using deep learning models.</p>
-  </div>
-
 </body>
 </html>
-
