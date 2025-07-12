@@ -20,6 +20,12 @@
       margin-top: 50px;
       margin-bottom: 20px;
     }
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      line-height: 1.5;
+      color: #555;
+    }
     .projects-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -45,18 +51,34 @@
     .project-title:hover {
       text-decoration: underline;
     }
-    .project-desc {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      color: #555;
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #ddd;
+    }
+    footer a {
+      color: #0366d6;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>Roberto Di Lauro</h1>
-  <p style="text-align:center; max-width: 700px; margin: 0 auto;">
-    Welcome to my portfolio! Here you can find some of my projects related to machine learning, data science, and computer vision.
-  </p>
+
+  <section id="about-me">
+    <p>
+      Hi! I'm Roberto, a data scientist and machine learning enthusiast with a passion for computer vision and medical imaging.
+      I work with Python, deep learning frameworks, and data analysis tools to create impactful solutions.
+      Feel free to check out my projects below or connect with me on LinkedIn.
+    </p>
+  </section>
 
   <h2>Projects</h2>
   <div class="projects-container">
@@ -65,7 +87,7 @@
       <a href="https://github.com/RDLstud/Life-Expectancy-Analysis" class="project-title" target="_blank" rel="noopener noreferrer">
         Life Expectancy Analysis
       </a>
-      <p class="project-desc">
+      <p>
         Analysis and visualization of life expectancy data using statistical and machine learning techniques.
       </p>
     </div>
@@ -74,7 +96,7 @@
       <a href="https://github.com/RDLstud/AIFA-database-Creation" class="project-title" target="_blank" rel="noopener noreferrer">
         AIFA Database Creation
       </a>
-      <p class="project-desc">
+      <p>
         Data collection and processing pipeline for creating a structured pharmaceutical database from AIFA sources.
       </p>
     </div>
@@ -83,16 +105,16 @@
       <a href="https://github.com/RDLstud/Gradient-Descent" class="project-title" target="_blank" rel="noopener noreferrer">
         Gradient Descent
       </a>
-      <p class="project-desc">
+      <p>
         Implementation and analysis of gradient descent algorithms for optimization problems.
       </p>
     </div>
 
     <div class="project-card">
-      <a href="https://github.com/RDLstud/Predictive-Maintenance-prognostic" class="project-title" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/RDLstud/Predictive-Maintenance-prognostic-" class="project-title" target="_blank" rel="noopener noreferrer">
         Predictive Maintenance Prognostic
       </a>
-      <p class="project-desc">
+      <p>
         Development of predictive models for maintenance scheduling based on sensor data and prognostic algorithms.
       </p>
     </div>
@@ -101,7 +123,7 @@
       <a href="https://github.com/RDLstud/NMF-vs-PCA" class="project-title" target="_blank" rel="noopener noreferrer">
         NMF vs PCA
       </a>
-      <p class="project-desc">
+      <p>
         Comparative study between Non-negative Matrix Factorization and Principal Component Analysis for feature extraction.
       </p>
     </div>
@@ -110,7 +132,7 @@
       <a href="https://github.com/RDLstud/Skin-Lesion-Detection" class="project-title" target="_blank" rel="noopener noreferrer">
         Skin Lesion Detection
       </a>
-      <p class="project-desc">
+      <p>
         Machine learning project focusing on detecting skin lesions from dermoscopic images.
       </p>
     </div>
@@ -119,11 +141,19 @@
       <a href="https://github.com/RDLstud/Web-App-Skin-Lesion-Detection" class="project-title" target="_blank" rel="noopener noreferrer">
         Web App Skin Lesion Detection
       </a>
-      <p class="project-desc">
+      <p>
         Development of a web application for real-time skin lesion detection using deep learning models.
       </p>
     </div>
 
   </div>
+
+  <footer>
+    <p>Connect with me: 
+      <a href="https://www.linkedin.com/in/roberto-dilauro/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+      <a href="mailto:robertodilauro0804@gmail.com">Email</a>
+    </p>
+    <p>&copy; 2025 Roberto Di Lauro</p>
+  </footer>
 </body>
 </html>
